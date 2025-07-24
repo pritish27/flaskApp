@@ -7,11 +7,10 @@
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm <span class="highlight">Pritish Togare</span></h1>
-            <p class="hero-subtitle">Full Stack Developer & Problem Solver</p>
+            <h1 class="hero-title">Hi, I'm <span class="highlight">{{ personal_info.full_name }}</span></h1>
+            <p class="hero-subtitle">{{ personal_info.title }}</p>
             <p class="hero-description">
-                I create beautiful, functional, and user-friendly web applications using modern technologies.
-                Passionate about clean code, innovative solutions, and continuous learning.
+                {{ personal_info.description }}
             </p>
             <div class="hero-buttons">
                 <a href="/contact" class="btn">Get In Touch</a>
@@ -25,26 +24,13 @@
     <div class="container">
         <h2 class="section-title">Skills & Technologies</h2>
         <div class="skills-grid">
+            {% for skill in skills %}
             <div class="skill-card">
-                <i class="fab fa-python"></i>
-                <h3>Python</h3>
-                <p>Flask, Django, FastAPI</p>
+                <i class="{{ skill.icon }}"></i>
+                <h3>{{ skill.name }}</h3>
+                <p>{{ skill.description }}</p>
             </div>
-            <div class="skill-card">
-                <i class="fab fa-js-square"></i>
-                <h3>JavaScript</h3>
-                <p>React, Node.js, Express</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>Databases</h3>
-                <p>PostgreSQL, MongoDB, Redis</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-git-alt"></i>
-                <h3>DevOps</h3>
-                <p>Git, Docker, CI/CD</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -53,30 +39,16 @@
     <div class="container">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
+            {% for project in projects %}
             <div class="project-card">
                 <div class="project-image">
-                    <i class="fas fa-laptop-code"></i>
+                    <i class="{{ project.icon }}"></i>
                 </div>
-                <h3>Web Application</h3>
-                <p>A full-stack web application built with Flask and React</p>
-                <a href="#" class="project-link">View Project</a>
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                <a href="{{ project.link }}" class="project-link">View Project</a>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3>Mobile App</h3>
-                <p>Cross-platform mobile application with modern UI/UX</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Data Analytics</h3>
-                <p>Data visualization and analytics dashboard</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
