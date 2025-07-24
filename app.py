@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 
+# all generated through replit AI
 @app.route("/")
 @app.route("/home")
 def home():
@@ -24,13 +25,13 @@ def contact():
     email = request.form.get("email")
     subject = request.form.get("subject")
     message = request.form.get("message")
-    
+
     # For now, just print the data (you can implement email sending later)
     print(f"Contact form submitted: {name}, {email}, {subject}")
-    
+
     # You could redirect to a thank you page or show a success message
     return redirect("/contact")
-  
+
   return render_template("contact.html")
 
 
