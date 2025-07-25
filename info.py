@@ -13,18 +13,18 @@ SITE_CONFIG = {
         'name': 'Python',
         'description': 'Flask, Django, FastAPI'
     }, {
-        'icon': 'fab fa-js-square',
+        'icon': 'fas fa-robot',
         'name': 'Automation',
         'description': 'PowerAutomate, Xceptor, UiPath'
     }, {
         'icon': 'fas fa-database',
         'name': 'Databases',
         'description': 'PostgreSQL, MongoDB'
-    }, {
+    }, """{
         'icon': 'fab fa-git-alt',
         'name': 'DevOps',
         'description': 'Git, Docker, CI/CD'
-    }],
+               }"""],
     'projects': [{
         'icon': 'fas fa-laptop-code',
         'title': 'Web Application',
@@ -68,13 +68,22 @@ SITE_CONFIG = {
         'Developed and maintained multiple automation built using Xceptor, PowerAutomate Cloud,UiPath and built webapps using PowerApps'
     }, {
         'title':
-        'Computer Science Degree',
+        'Senior Analyst',
         'company':
-        'University Name',
+        'ADP Pvt Ltd.',
         'period':
-        '2016 - 2020',
+        'April 2016 - June 2022',
         'description':
-        'Bachelor of Science in Computer Science with focus on software engineering.'
+        'Developed and maintained multiple automation built using Xceptor, PowerAutomate Cloud'
+    }, {
+        'title':
+        'B.E Information Technology',
+        'company':
+        'Pune University',
+        'period':
+        '2008 - 2011',
+        'description':
+        'Bachelor of Science in Information Technology with focus on software engineering.'
     }],
     'values': [{
         'icon':
