@@ -1,30 +1,34 @@
 SITE_CONFIG = {
     'personal_info': {
         'full_name': 'Pritish Togare',
-        'title': 'Full Stack Developer & Problem Solver',
+        'title':
+        'Automation Specialist, Full Stack Developer & Problem Solver',
         'description':
-        'I create beautiful, functional, and user-friendly web applications using modern technologies. Passionate about clean code, innovative solutions, and continuous learning.',
-        'email': 'pritish.togare@example.com',
-        'phone': '+1 (555) 123-4567',
-        'location': 'Your City, Country'
+        'I create enterprise ready automation solution that turns mundanne, repetitive and manual tasks into fully automated solutions so we can focus on what important work that matters! I also design beautiful, functional, and user-friendly web applications using modern technologies. Passionate about clean code, innovative solutions, and continuous learning.',
+        'email': 'pritish.togare@gmail.com',
+        'phone': '+91- 84211xxx38',
+        'location': 'Pune, India'
     },
-    'skills': [{
-        'icon': 'fab fa-python',
-        'name': 'Python',
-        'description': 'Flask, Django, FastAPI'
-    }, {
-        'icon': 'fas fa-robot',
-        'name': 'Automation',
-        'description': 'PowerAutomate, Xceptor, UiPath'
-    }, {
-        'icon': 'fas fa-database',
-        'name': 'Databases',
-        'description': 'PostgreSQL, MongoDB'
-    }, {
-        'icon': 'fab fa-git-alt',
-        'name': 'DevOps',
-        'description': 'Git, Docker, CI/CD'
-    }],
+    'skills': [
+        {
+            'icon': 'fab fa-python',
+            'name': 'Python',
+            'description': 'Flask, Django, FastAPI'
+        },
+        {
+            'icon':
+            'fas fa-robot',
+            'name':
+            'Automation',
+            'description':
+            'PowerAutomate Cloud, PowerAutomate Desktop, Xceptor, UiPath'
+        },
+        {
+            'icon': 'fas fa-database',
+            'name': 'Databases',
+            'description': 'PostgreSQL, MongoDB'
+        },
+    ],
     'projects': [{
         'icon': 'fas fa-laptop-code',
         'title': 'Web Application',
