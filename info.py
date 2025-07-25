@@ -20,11 +20,11 @@ SITE_CONFIG = {
         'icon': 'fas fa-database',
         'name': 'Databases',
         'description': 'PostgreSQL, MongoDB'
-    }, """{
+    }, {
         'icon': 'fab fa-git-alt',
         'name': 'DevOps',
         'description': 'Git, Docker, CI/CD'
-               }"""],
+    }],
     'projects': [{
         'icon': 'fas fa-laptop-code',
         'title': 'Web Application',
